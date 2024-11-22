@@ -1,29 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>marc lupi - technicien supérieur systèmes et réseaux</title>
+        <title>Marc Lupi - Technicien Supérieur Systèmes et Réseaux</title>
+        <!-- lien vers le fichier css -->
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
         <!-- cdn css bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
     <body>
-        <div class="container mt-1 titre">
-            <h1>technicien supérieur systèmes et réseaux</h1>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">MARC LUPI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Composants</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#headingOne">Compétences</a></li>
+                                <li><a class="dropdown-item" href="#headingTwo">Expériences professionnelles</a></li>
+                                <li><a class="dropdown-item" href="#headingThree">Formations</a></li>
+                                <li><a class="dropdown-item" href="#headingFour">Qualités personnelles</a></li>
+                                <li><a class="dropdown-item" href="#headingFive">Langues</a></li>
+                                <li><a class="dropdown-item" href="#headingSix">Centres d'intérêt</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- titre de la page -->
+        <div class="container text-center titre">
+            <h1>Technicien Supérieur Systèmes et Réseaux</h1>
         </div>
-
+        
         <!-- rubrique 1 - compétences -->
         <div class="accordion" id="accordion_1">
             <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <h2>compétences</h2>
-                </button>
-            </h2>
-            <!-- dans la classe class="accordion-collapse collapse show", supprimer la classe show pour que les collapse ne s'affichent pas au lancement de la page -->
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion_1">
-                <div class="accordion-body competences">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <h2>compétences</h2>
+                    </button>
+                </h2>
+                <!-- dans la classe class="accordion-collapse collapse show", supprimer la classe show pour que les collapses ne s'affichent pas au lancement de la page -->
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion_1">
+                    <div class="accordion-body competences">
                     <p>assurer le support utilisateur en centre de services</p>
                     <p>exploiter des serveurs windows et un domaine active directory</p>
                     <p>exploiter des serveurs linux</p>
@@ -33,195 +66,207 @@
                     <p>maintenir et sécuriser les accès à internet et les interconnexions des réseaux</p>
                     <p>mettre en place, assurer, tester les sauvegardes et les restaurations des élements de l'infrastucture</p>
                     <p>exploiter et maintenir les services de déploiement des postes de travail</p>
+                    </div>
                 </div>
             </div>
-        </div>
         
         <!-- rubrique 2 - expériences professionelles -->
         <div class="accordion" id="accordion_2">
             <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <h2>expériences professionnelles</h2>
-                </button>
-            </h2>
-            <!-- dans la classe class="accordion-collapse collapse show", supprimer la classe show pour que les collapse ne s'affichent pas au lancement de la page -->
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion_2">
-                    <div class="accordion-body experience">
-                        <p>de juillet 2019 à juillet 2023&nbsp;<span>création d'une entreprise de services numériques</span>&nbsp;<span>soften-it</span>&nbsp;<span>à auch</span></p>
-            
-                        <p>du 15 avril 2024 au 07 juin 2024&nbsp;<span>ouvrier d'assemblage</span>&nbsp;<span>positronic</span>&nbsp;<span>à auch</span></p>
-                        <p>du 22 août 2023 au 16 février 2024&nbsp;<span>préparateur de commandes</span>&nbsp;<span>leclerc hyperdis</span>&nbsp;<span>à auch</span></p>
-                        <p>du 1er mars 2022 au 14 août 2023&nbsp;<span>équipier polyvalent</span>&nbsp;<span>valoris</span>&nbsp;<span>à auch</span></p>
-                            <p>le 31 décembre 2022&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
-                            <p>le 17 octobre 2022&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
-                        <p>le 28 février 2022&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
-                        <p>du 07 février 2022 au 16 février 2022&nbsp;<span>employé commercial</span>&nbsp;<span>intermarché</span>&nbsp;<span>à auch</span></p>
-                        <p>le 17 janvier 2022&nbsp;<span>manutentionnaire</span>&nbsp;<span>cdp</span>&nbsp;<span>à auch</span></p>
-                        <p>le 30 décembre 2021&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
-                        <p>le 18 octobre 2021&nbsp;<span>manoeuvre</span>&nbsp;<span>cdp</span>&nbsp;<span>à auch</span></p>
-                        <p>le 11 octobre 2021&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
-                        <p>le 02 octobre 2021&nbsp;<span>inventoriste</span>&nbsp;<span>leclerc hyperdis</span>&nbsp;<span>à auch</span></p>
-                        <p>du 24 août 2021 au 27 août 2021&nbsp;<span>manoeuvre</span>&nbsp;<span>lycée polyvalent du garros</span>&nbsp;<span>à auch</span></p>
-                        <p>le 07 mai 2021&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
-                        <p>du 12 avril 2021 au 16 avril 2021&nbsp;<span>préparateur de commandes</span>&nbsp;<span>cdp distribution</span>&nbsp;<span>à auch</span></p>
-                        <p>le 02 avril 2021&nbsp;<span>manutentionnaire</span>&nbsp;<span>cdp distribution</span>&nbsp;<span>à auch</span></p>
-                        <p>le 27 mars 2021&nbsp;<span>inventoriste</span>&nbsp;<span>leclerc hyperdis</span>&nbsp;<span>à auch</span></p>
-                        <p>le 15 mars 2021&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
-                        <p>le 22 janvier 2021&nbsp;<span>client mystère</span>&nbsp;<span>field and solutions</span>&nbsp;<span>à auch</span></p>
-                        <p>du 08 septembre 2020 au 12 septembre 2020&nbsp;<span>employé commercial</span>&nbsp;<span>action</span>&nbsp;<span>à auch</span></p>
-                        <p>le 1er septembre 2020&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
-                        <p>le 30 août 2020&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
-                        <p>le 30 juillet 2020&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
-                        <p>le 08 juillet 2020&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
-                        <p>le 06 juillet 2020&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
-                        <p>du 1er août 2019 au 31 mai 2020&nbsp;<span>technicien support, technicien intégrateur</span>&nbsp;<span>conseil général du gers</span>&nbsp;<span>à auch</span></p>
-                        <p>du 15 décembre 2008 au 06juin 2017&nbsp;<span>second de cuisine</span>&nbsp;<span>sodexo-polyclinique de gascogne</span>&nbsp;<span>à auch</span></p>
-                        <p>du 12 mai 2008 au 14 décembre 2008&nbsp;<span>agent de service</span>&nbsp;<span>starclean</span>&nbsp;<span>à fleurance</span></p>
-                        <p>du 08 mai 2008 au 09 mai 2008&nbsp;<span>cuisinier</span>&nbsp;<span>lycée privé oratoire</span>&nbsp;<span>à auch</span></p>
-                        <p>du 28 avril 2008 au 02 mai 2008&nbsp;<span>cuisinier</span>&nbsp;<span>lycée privé oratoire</span>&nbsp;<span>à auch</span></p>
-                        <p>le 03 avril 2008&nbsp;<span>cuisinier</span>&nbsp;<span>lycée privé oratoire</span>&nbsp;<span>à auch</span></p>
-                        <p>du 26 mars 2008 au 31 mars 2008&nbsp;<span>employé commercial</span>&nbsp;<span>la foir'fouille</span>&nbsp;<span>à auch</span></p>
-                        <p>du 17 septembre 2007 au 16 novembre 2007&nbsp;<span>cuisinier-gérant</span>&nbsp;<span>la roseraie</span>&nbsp;<span>à auch</span></p>
-                        <p>du 20 août 2007 au 07 septembre 2007&nbsp;<span>cuisinier</span>&nbsp;<span>les petites soeurs des pauvres</span>&nbsp;<span>à auch</span></p>
-                        <p>le 10 juillet 2007&nbsp;<span>manutentionnaire</span>&nbsp;<span>recurt</span>&nbsp;<span>à auch</span></p>
-                        <p>le 07 juillet 2007&nbsp;<span>manutentionnaire</span>&nbsp;<span>recurt</span>&nbsp;<span>à auch</span></p>
-                        <p>le 26 décembre 2006&nbsp;<span>manutentionnaire</span>&nbsp;<span>recurt</span>&nbsp;<span>à auch</span></p>
-                        <p>le 22 décembre 2006&nbsp;<span>chauffeur livreur</span>&nbsp;<span>allo courses gascogne</span>&nbsp;<span>à auch</span></p>
-                        <p>le 18 décembre 2006&nbsp;<span>manutentionnaire</span>&nbsp;<span>recurt</span>&nbsp;<span>à auch</span></p>
-                        <p>du 06 février 2006 au 13 octobre 2006&nbsp;<span>technicien méthodes</span>&nbsp;<span>éclair documentation technique</span>&nbsp;<span>à cornebarrieu</span></p>
-                        <p>du 18 octobre 2004 au 22 novembre 2004&nbsp;<span>ajusteur monteur</span>&nbsp;<span>airbus</span>&nbsp;<span>à colomiers</span></p>
-                        <p>du 27 septembre 2004 au 1er octobre 2004&nbsp;<span>mécanicien cabine</span>&nbsp;<span>airbus</span>&nbsp;<span>à colomiers</span></p>
-                        <p>du 02 août 2004 au 06 août 2004&nbsp;<span>ajusteur aéronautique</span>&nbsp;<span>air france</span>&nbsp;<span>à blagnac</span></p>
-                        <p>du 26 juillet 2004 au 30 juillet 2004&nbsp;<span>ajusteur aéronautique</span>&nbsp;<span>air france</span>&nbsp;<span>à blagnac</span></p>
-                        <p>du 05 juillet 2004 au 16 juillet 2004&nbsp;<span>chaudronnier aéronautique</span>&nbsp;<span>airbus</span>&nbsp;<span>à colomiers</span></p>
-                        <p>le 07 juin 2004&nbsp;<span>chaudronnier aéronautique</span>&nbsp;<span>airbus</span>&nbsp;<span>à colomiers</span></p>
-                        <p>du 22 mars 2004 au 09 avril 2004&nbsp;<span>mécanicien cabine</span>&nbsp;<span>air france</span>&nbsp;<span>à colomiers</span></p>
-                        <p>du 1er mars 2004 au 12 mars 2004&nbsp;<span>ouvrier d'entretien</span>&nbsp;<span>airbus</span>&nbsp;<span>à colomiers</span></p>
-                        <p>du 14 février 2004 au 20 février 2004&nbsp;<span>mécanicien cabine</span>&nbsp;<span>airbus</span>&nbsp;<span>à colomiers</span></p>
-                        <p>du 26 mai 2002 au 23 décembre 2003&nbsp;<span>mécanicien cabine</span>&nbsp;<span>aaa</span>&nbsp;<span>à colomiers</span></p>
-                        <p>du 19 mai 2003 au 23 mai 2003&nbsp;<span>mécanicien cabine</span>&nbsp;<span>daher lhotellier </span>&nbsp;<span>à colomiers</span></p>
-                        <p>du 15 mai 2003 au 16 mai 2003&nbsp;<span>ouvrier d'entretien</span>&nbsp;<span>air france</span>&nbsp;<span>à toulouse montaudran</span></p>
-                        <p>du 20 février 2003 au 25 avril 2003&nbsp;<span>ajusteur cellule</span>&nbsp;<span>Latécoère</span>&nbsp;<span>à gimont</span></p>
-                        <p>le 10 février 2003&nbsp;<span>essai professionnel au siège de la société latécoère</span>&nbsp;<span>latécoère</span>&nbsp;<span>à toulouse</span></p>
-                        <p>du 04 juillet 1994 au 14 septembre 2002&nbsp;<span>cuisinier</span>&nbsp;<span>hôpital</span>&nbsp;<span>à fleurance</span></p>
-                            <p>le 11 juillet 2000&nbsp;<span>ouvrier saisonnier</span>&nbsp;<span>earl alias</span>&nbsp;<span>à castéra-lectourois</span></p>
-                            <p>le 21 juillet 2000&nbsp;<span>ouvrier saisonnier</span>&nbsp;<span>earl de berthès</span>&nbsp;<span>à lectoure</span></p>
-                        <p>du 1er mai 1994 au 30 juin 1994&nbsp;<span>équipier polyvalent</span>&nbsp;<span>hôtel de france</span>&nbsp;<span>à auch</span></p>
-                        <p>du 08 avril 1991 au 30 août 1992&nbsp;<span>cuisinier à bord de la frégate lance-missilles duquesne</span>&nbsp;<span>marine nationale</span>&nbsp;<span>à toulon</span></p>
-                        <p>du 23 janvier 1989 au 07 avril 1991&nbsp;<span>cuisinier sur la base aéronavale</span>&nbsp;<span>marine nationale</span>&nbsp;<span>à hyères</span></p>
-                        <p>du 1er novembre 1988 au 22 janvier 1989&nbsp;<span>école de spécialisation de la marine</span>&nbsp;<span>marine nationale</span>&nbsp;<span>à rochefort</span></p>
-                        <p>du 26 août 1988 au 31 octobre 1988&nbsp;<span>classes de marine</span>&nbsp;<span>marine nationale</span>&nbsp;<span>à querqueville</span></p>
-                        <p>du 03 août 1988 au 04 août 1988&nbsp;<span>cuisinier</span>&nbsp;<span>manutentionnaire min des marchés toulousains</span>&nbsp;<span>à toulouse</span></p>
-                        <p>du 09 mai 1988 au 08 juin 1988&nbsp;<span>cuisinier</span>&nbsp;<span>restaurant chez carmen</span>&nbsp;<span>à toulouse</span></p>
-                        <p>du 06 mai 1988 au 07 mai 1988&nbsp;<span>cuisinier</span>&nbsp;<span>restaurant la bohême</span>&nbsp;<span>à toulouse</span></p>
-                        <p>du 03 mai 1988 au 05 mai 1988&nbsp;<span>cuisinier</span>&nbsp;<span>hôtel crystal</span>&nbsp;<span>à lourdes</span></p>
-                        <p>du 17 avril 1988 au 19 avril 1988&nbsp;<span>cuisinier</span>&nbsp;<span>hôtel ariel</span>&nbsp;<span>à lourdes</span></p>
-                        <p>du 1er février 1988 au 16 avril 1988&nbsp;<span>cuisinier</span>&nbsp;<span>lycée polyvalent du garros</span>&nbsp;<span>à auch</span></p>
-                        <p>du 1er juillet 1987 au 31 août 1987&nbsp;<span>cuisinier</span>&nbsp;<span>hôtel balzac</span>&nbsp;<span>à paris 08</span></p>
-                        <h5>2024</h5>
-                        <h5>2023</h5>
-                        <h5>2022-2023</h5>
-                        <h5>2021</h5>
-                        <h5>2019-2020</h5>
-                        <h5>2008-2017</h5>
-                        <h5>2006</h5>
-                        <h5>2002-2006</h5>
-                        <h5>1994-2002</h5>
-                        <h5>1988-1992</h5>
-                        <h5>1988</h5>
-                        <h5>1987</h5>
-                    </div>
-                </div>
-        </div>
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h2>expériences professionnelles</h2>
+                    </button>
+                </h2>
+            <!-- dans la classe class="accordion-collapse collapse show", supprimer la classe show pour que les collapses ne s'affichent pas au lancement de la page -->
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion_2">
+                <div class="accordion-body experience">
+                    <p>de juillet 2019 à juillet 2023&nbsp;<span>création d'une entreprise de services numériques</span>&nbsp;<span>soften-it</span>&nbsp;<span>à auch</span></p>
         
+                    <p>du 15 avril 2024 au 07 juin 2024&nbsp;<span>ouvrier d'assemblage</span>&nbsp;<span>positronic</span>&nbsp;<span>à auch</span></p>
+                    <p>du 22 août 2023 au 16 février 2024&nbsp;<span>préparateur de commandes</span>&nbsp;<span>leclerc hyperdis</span>&nbsp;<span>à auch</span></p>
+                    <p>du 1er mars 2022 au 14 août 2023&nbsp;<span>équipier polyvalent</span>&nbsp;<span>valoris</span>&nbsp;<span>à auch</span></p>
+                    <p>le 31 décembre 2022&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
+                    <p>le 17 octobre 2022&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
+                    <p>le 28 février 2022&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
+                    <p>du 07 février 2022 au 16 février 2022&nbsp;<span>employé commercial</span>&nbsp;<span>intermarché</span>&nbsp;<span>à auch</span></p>
+                    <p>le 17 janvier 2022&nbsp;<span>manutentionnaire</span>&nbsp;<span>cdp</span>&nbsp;<span>à auch</span></p>
+                    <p>le 30 décembre 2021&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
+                    <p>le 18 octobre 2021&nbsp;<span>manoeuvre</span>&nbsp;<span>cdp</span>&nbsp;<span>à auch</span></p>
+                    <p>le 11 octobre 2021&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
+                    <p>le 02 octobre 2021&nbsp;<span>inventoriste</span>&nbsp;<span>leclerc hyperdis</span>&nbsp;<span>à auch</span></p>
+                    <p>du 24 août 2021 au 27 août 2021&nbsp;<span>manoeuvre</span>&nbsp;<span>lycée polyvalent du garros</span>&nbsp;<span>à auch</span></p>
+                    <p>le 07 mai 2021&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
+                    <p>du 12 avril 2021 au 16 avril 2021&nbsp;<span>préparateur de commandes</span>&nbsp;<span>cdp distribution</span>&nbsp;<span>à auch</span></p>
+                    <p>le 02 avril 2021&nbsp;<span>manutentionnaire</span>&nbsp;<span>cdp distribution</span>&nbsp;<span>à auch</span></p>
+                    <p>le 27 mars 2021&nbsp;<span>inventoriste</span>&nbsp;<span>leclerc hyperdis</span>&nbsp;<span>à auch</span></p>
+                    <p>le 15 mars 2021&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
+                    <p>le 22 janvier 2021&nbsp;<span>client mystère</span>&nbsp;<span>field and solutions</span>&nbsp;<span>à auch</span></p>
+                    <p>du 08 septembre 2020 au 12 septembre 2020&nbsp;<span>employé commercial</span>&nbsp;<span>action</span>&nbsp;<span>à auch</span></p>
+                    <p>le 1er septembre 2020&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
+                    <p>le 30 août 2020&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
+                    <p>le 30 juillet 2020&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
+                    <p>le 08 juillet 2020&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
+                    <p>le 06 juillet 2020&nbsp;<span>inventoriste</span>&nbsp;<span>fairson</span>&nbsp;<span>à auch</span></p>
+                    <p>du 1er août 2019 au 31 mai 2020&nbsp;<span>technicien support, technicien intégrateur</span>&nbsp;<span>conseil général du gers</span>&nbsp;<span>à auch</span></p>
+                    <p>du 15 décembre 2008 au 06juin 2017&nbsp;<span>second de cuisine</span>&nbsp;<span>sodexo-polyclinique de gascogne</span>&nbsp;<span>à auch</span></p>
+                    <p>du 12 mai 2008 au 14 décembre 2008&nbsp;<span>agent de service</span>&nbsp;<span>starclean</span>&nbsp;<span>à fleurance</span></p>
+                    <p>du 08 mai 2008 au 09 mai 2008&nbsp;<span>cuisinier</span>&nbsp;<span>lycée privé oratoire</span>&nbsp;<span>à auch</span></p>
+                    <p>du 28 avril 2008 au 02 mai 2008&nbsp;<span>cuisinier</span>&nbsp;<span>lycée privé oratoire</span>&nbsp;<span>à auch</span></p>
+                    <p>le 03 avril 2008&nbsp;<span>cuisinier</span>&nbsp;<span>lycée privé oratoire</span>&nbsp;<span>à auch</span></p>
+                    <p>du 26 mars 2008 au 31 mars 2008&nbsp;<span>employé commercial</span>&nbsp;<span>la foir'fouille</span>&nbsp;<span>à auch</span></p>
+                    <p>du 17 septembre 2007 au 16 novembre 2007&nbsp;<span>cuisinier-gérant</span>&nbsp;<span>la roseraie</span>&nbsp;<span>à auch</span></p>
+                    <p>du 20 août 2007 au 07 septembre 2007&nbsp;<span>cuisinier</span>&nbsp;<span>les petites soeurs des pauvres</span>&nbsp;<span>à auch</span></p>
+                    <p>le 10 juillet 2007&nbsp;<span>manutentionnaire</span>&nbsp;<span>recurt</span>&nbsp;<span>à auch</span></p>
+                    <p>le 07 juillet 2007&nbsp;<span>manutentionnaire</span>&nbsp;<span>recurt</span>&nbsp;<span>à auch</span></p>
+                    <p>le 26 décembre 2006&nbsp;<span>manutentionnaire</span>&nbsp;<span>recurt</span>&nbsp;<span>à auch</span></p>
+                    <p>le 22 décembre 2006&nbsp;<span>chauffeur livreur</span>&nbsp;<span>allo courses gascogne</span>&nbsp;<span>à auch</span></p>
+                    <p>le 18 décembre 2006&nbsp;<span>manutentionnaire</span>&nbsp;<span>recurt</span>&nbsp;<span>à auch</span></p>
+                    <p>du 06 février 2006 au 13 octobre 2006&nbsp;<span>technicien méthodes</span>&nbsp;<span>éclair documentation technique</span>&nbsp;<span>à cornebarrieu</span></p>
+                    <p>du 18 octobre 2004 au 22 novembre 2004&nbsp;<span>ajusteur monteur</span>&nbsp;<span>airbus</span>&nbsp;<span>à colomiers</span></p>
+                    <p>du 27 septembre 2004 au 1er octobre 2004&nbsp;<span>mécanicien cabine</span>&nbsp;<span>airbus</span>&nbsp;<span>à colomiers</span></p>
+                    <p>du 02 août 2004 au 06 août 2004&nbsp;<span>ajusteur aéronautique</span>&nbsp;<span>air france</span>&nbsp;<span>à blagnac</span></p>
+                    <p>du 26 juillet 2004 au 30 juillet 2004&nbsp;<span>ajusteur aéronautique</span>&nbsp;<span>air france</span>&nbsp;<span>à blagnac</span></p>
+                    <p>du 05 juillet 2004 au 16 juillet 2004&nbsp;<span>chaudronnier aéronautique</span>&nbsp;<span>airbus</span>&nbsp;<span>à colomiers</span></p>
+                    <p>le 07 juin 2004&nbsp;<span>chaudronnier aéronautique</span>&nbsp;<span>airbus</span>&nbsp;<span>à colomiers</span></p>
+                    <p>du 22 mars 2004 au 09 avril 2004&nbsp;<span>mécanicien cabine</span>&nbsp;<span>air france</span>&nbsp;<span>à colomiers</span></p>
+                    <p>du 1er mars 2004 au 12 mars 2004&nbsp;<span>ouvrier d'entretien</span>&nbsp;<span>airbus</span>&nbsp;<span>à colomiers</span></p>
+                    <p>du 14 février 2004 au 20 février 2004&nbsp;<span>mécanicien cabine</span>&nbsp;<span>airbus</span>&nbsp;<span>à colomiers</span></p>
+                    <p>du 26 mai 2002 au 23 décembre 2003&nbsp;<span>mécanicien cabine</span>&nbsp;<span>aaa</span>&nbsp;<span>à colomiers</span></p>
+                    <p>du 19 mai 2003 au 23 mai 2003&nbsp;<span>mécanicien cabine</span>&nbsp;<span>daher lhotellier </span>&nbsp;<span>à colomiers</span></p>
+                    <p>du 15 mai 2003 au 16 mai 2003&nbsp;<span>ouvrier d'entretien</span>&nbsp;<span>air france</span>&nbsp;<span>à toulouse montaudran</span></p>
+                    <p>du 20 février 2003 au 25 avril 2003&nbsp;<span>ajusteur cellule</span>&nbsp;<span>Latécoère</span>&nbsp;<span>à gimont</span></p>
+                    <p>le 10 février 2003&nbsp;<span>essai professionnel au siège de la société latécoère</span>&nbsp;<span>latécoère</span>&nbsp;<span>à toulouse</span></p>
+                    <p>du 04 juillet 1994 au 14 septembre 2002&nbsp;<span>cuisinier</span>&nbsp;<span>hôpital</span>&nbsp;<span>à fleurance</span></p>
+                    <p>le 11 juillet 2000&nbsp;<span>ouvrier saisonnier</span>&nbsp;<span>earl alias</span>&nbsp;<span>à castéra-lectourois</span></p>
+                        <p>le 21 juillet 2000&nbsp;<span>ouvrier saisonnier</span>&nbsp;<span>earl de berthès</span>&nbsp;<span>à lectoure</span></p>
+                    <p>du 1er mai 1994 au 30 juin 1994&nbsp;<span>équipier polyvalent</span>&nbsp;<span>hôtel de france</span>&nbsp;<span>à auch</span></p>
+                    <p>du 08 avril 1991 au 30 août 1992&nbsp;<span>cuisinier à bord de la frégate lance-missilles duquesne</span>&nbsp;<span>marine nationale</span>&nbsp;<span>à toulon</span></p>
+                    <p>du 23 janvier 1989 au 07 avril 1991&nbsp;<span>cuisinier sur la base aéronavale</span>&nbsp;<span>marine nationale</span>&nbsp;<span>à hyères</span></p>
+                    <p>du 1er novembre 1988 au 22 janvier 1989&nbsp;<span>école de spécialisation de la marine</span>&nbsp;<span>marine nationale</span>&nbsp;<span>à rochefort</span></p>
+                    <p>du 26 août 1988 au 31 octobre 1988&nbsp;<span>classes de marine</span>&nbsp;<span>marine nationale</span>&nbsp;<span>à querqueville</span></p>
+                    <p>du 03 août 1988 au 04 août 1988&nbsp;<span>cuisinier</span>&nbsp;<span>manutentionnaire min des marchés toulousains</span>&nbsp;<span>à toulouse</span></p>
+                    <p>du 09 mai 1988 au 08 juin 1988&nbsp;<span>cuisinier</span>&nbsp;<span>restaurant chez carmen</span>&nbsp;<span>à toulouse</span></p>
+                    <p>du 06 mai 1988 au 07 mai 1988&nbsp;<span>cuisinier</span>&nbsp;<span>restaurant la bohême</span>&nbsp;<span>à toulouse</span></p>
+                    <p>du 03 mai 1988 au 05 mai 1988&nbsp;<span>cuisinier</span>&nbsp;<span>hôtel crystal</span>&nbsp;<span>à lourdes</span></p>
+                    <p>du 17 avril 1988 au 19 avril 1988&nbsp;<span>cuisinier</span>&nbsp;<span>hôtel ariel</span>&nbsp;<span>à lourdes</span></p>
+                    <p>du 1er février 1988 au 16 avril 1988&nbsp;<span>cuisinier</span>&nbsp;<span>lycée polyvalent du garros</span>&nbsp;<span>à auch</span></p>
+                    <p>du 1er juillet 1987 au 31 août 1987&nbsp;<span>cuisinier</span>&nbsp;<span>hôtel balzac</span>&nbsp;<span>à paris 08</span></p>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <h5>2024</h5>
+                    <h5>2023</h5>
+                    <h5>2022-2023</h5>
+                    <h5>2021</h5>
+                    <h5>2019-2020</h5>
+                    <h5>2008-2017</h5>
+                    <h5>2006</h5>
+                    <h5>2002-2006</h5>
+                    <h5>1994-2002</h5>
+                    <h5>1988-1992</h5>
+                    <h5>1988</h5>
+                    <h5>1987</h5>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
     </div>
 
-        <!-- rubrique 3 - formations -->
-        <div class="accordion" id="accordion_3">
-            <div class="accordion-item">
+    <!-- rubrique 3 - formations -->
+    <div class="accordion" id="accordion_3">
+        <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                    <h2>formation</h2>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h2>formations</h2>
                 </button>
             </h2>
-            <!-- dans la classe class="accordion-collapse collapse show", supprimer la classe show pour que les collapse ne s'affichent pas au lancement de la page -->
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion_3">
-                    <div class="accordion-body diplome">
-                        <div>
-                            <h4 class="certification">
-                                <p>technicien supérieur systèmes et réseaux</p>
-                            </h4>
-                            <div class="date">
-                                <p>en cours</p>
-                            </div>
-                            <div class="lieu_certification">
-                                <p>châtellerault</p>
-                            </div>
-                            <div class="explication">
-                                <p>formation qualifiante...</p>
-                            </div>
+            <!-- dans la classe class="accordion-collapse collapse show", supprimer la classe show pour que les collapses ne s'affichent pas au lancement de la page -->
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion_3">
+                <div class="accordion-body diplome">
+                    <div>
+                        <h4 class="certification">
+                            <p>technicien supérieur systèmes et réseaux</p>
+                        </h4>
+                        <div class="date">
+                            <p>en cours</p>
                         </div>
-
-                        <div>
-                            <h4 class="certification">
-                                <p>licence 1ère année</p>
-                            </h4>
-                            <div class="date">
-                                <p>septembre 2023</p>
-                            </div>
-                            <div class="lieu_certification">
-                                <p>université toulouse jean-jaurès à toulouse</p>
-                            </div>
-                            <div class="explication">
-                                <p>début de formation d'études japonaises</p>
-                            </div>
+                        <div class="lieu_certification">
+                            <p>châtellerault</p>
                         </div>
-                        <div>
-                            <h4 class="certification">
-                                <p>caces r489 - 1a, 3 et 5</p>
-                            </h4>
-                            <div class="date">
-                                <p>juin 2020</p>
-                            </div>
-                            <div class="lieu_certification">
-                                <p>icône formation à auch</p>
-                            </div>
-                            <div class="explication">
-                                <p>conduite de chariots de manunention</p>
-                            </div>
+                        <div class="explication">
+                            <p>formation qualifiante...</p>
                         </div>
-                        <div>
-                            <h4 class="certification">
-                                <p>bonnes pratiques web</p>
-                            </h4>
-                            <div class="date">
-                                <p>janvier 2019</p>
-                            </div>
-                            <div class="lieu_certification">
-                                <p>opquast, en ligne</p>
-                            </div>
-                            <div class="explication">
-                                <p>certification professionnelle</p>
-                            </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="certification">
+                            <p>licence 1ère année</p>
+                        </h4>
+                        <div class="date">
+                            <p>septembre 2023</p>
                         </div>
-                        <div>
-                            <h4 class="certification">
-                                <p>développeur web et mobile</p>
-                            </h4>
-                            <div class="date">
-                                <p>mai 2018</p>
-                            </div>
-                            <div class="lieu_certification">
-                                <p>école du numérique simplon à auch </p>
-                            </div>
-                            <div class="explication">
-                                <p>certification rncp de niveau 3</p>
-                            </div>
+                        <div class="lieu_certification">
+                            <p>université toulouse jean-jaurès à toulouse</p>
                         </div>
-                        <div>
-                            <h4 class="certification">
-                                <p>diplôme d'accès aux études universitaires</p>
+                        <div class="explication">
+                            <p>début de formation d'études japonaises</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="certification">
+                            <p>caces r489 - 1a, 3 et 5</p>
+                        </h4>
+                        <div class="date">
+                            <p>juin 2020</p>
+                        </div>
+                        <div class="lieu_certification">
+                            <p>icône formation à auch</p>
+                        </div>
+                        <div class="explication">
+                            <p>conduite de chariots de manunention</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="certification">
+                            <p>bonnes pratiques web</p>
+                        </h4>
+                        <div class="date">
+                            <p>janvier 2019</p>
+                        </div>
+                        <div class="lieu_certification">
+                            <p>opquast, en ligne</p>
+                        </div>
+                        <div class="explication">
+                            <p>certification professionnelle</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="certification">
+                            <p>développeur web et mobile</p>
+                        </h4>
+                        <div class="date">
+                            <p>mai 2018</p>
+                        </div>
+                        <div class="lieu_certification">
+                            <p>école du numérique simplon à auch </p>
+                        </div>
+                        <div class="explication">
+                            <p>certification rncp de niveau 3</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="certification">
+                            <p>diplôme d'accès aux études universitaires</p>
                             </h4>
                             <div class="date">
                                 <p>septembre 2017</p>
@@ -333,18 +378,18 @@
                         </div>
                     </div>
                 </div>
-        </div>
-
+            </div>
+            
         <!-- rubrique 4 - qualités -->
         <div class="accordion" id="accordion_4">
             <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                    <h2>qualités</h2>
-                </button>
-            </h2>
-            <!-- dans la classe class="accordion-collapse collapse show", supprimer la classe show pour que les collapse ne s'affichent pas au lancement de la page -->
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion_four">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <h2>qualités personnelles</h2>
+                    </button>
+                </h2>
+                <!-- dans la classe class="accordion-collapse collapse show", supprimer la classe show pour que les collapses ne s'affichent pas au lancement de la page -->
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion_four">
                 <div class="accordion-body qualite">
                     <p>rigoureux</p>
                     <p>autonome</p>
@@ -355,44 +400,48 @@
                 </div>
             </div>
         </div>
-
+        
         <!-- rubrique 5 - langues -->
         <div class="accordion" id="accordion_5">
             <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapse">
-                    <h2>langues</h2>
-                </button>
-            </h2>
-            <!-- dans la classe class="accordion-collapse collapse show", supprimer la classe show pour que les collapse ne s'affichent pas au lancement de la page -->
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion_5">
-                <div class="accordion-body langue">
-                    <p><span>français</span> : langue maternelle</p>
-                    <p><span>anglais</span> : intermédiaire</p>
-                    <p><span>anglais technique</span> : intermiédiaire</p>
-                    <p><span>japonais</span> : débutant</p>
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapse">
+                        <h2>langues</h2>
+                    </button>
+                </h2>
+                <!-- dans la classe class="accordion-collapse collapse show", supprimer la classe show pour que les collapses ne s'affichent pas au lancement de la page -->
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion_5">
+                    <div class="accordion-body langue">
+                        <p><span>français</span> : langue maternelle</p>
+                        <p><span>anglais</span> : intermédiaire</p>
+                        <p><span>anglais technique</span> : intermiédiaire</p>
+                        <p><span>japonais</span> : débutant</p>
+                    </div>
                 </div>
+            </div>
+            
+            <div class="accordion" id="accordion_6">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <h2>centres d'intérêt</h2>
+                        </button>
+                    </h2>
+                    <!-- dans la classe class="accordion-collapse collapse show", supprimer la classe show pour que les collapses ne s'affichent pas au lancement de la page -->
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordion_6">
+                        <div class="accordion-body interet">
+                            <p>informatique, nouvelles technologies</p>
+                            <p>aviation, mécanique</p>
+                            <p>histoire, cinéma, musique</p>
+                        </div>
             </div>
         </div>
 
-        <div class="accordion" id="accordion_6">
-            <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSix">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                    <h2>centres d'intérêt</h2>
-                </button>
-            </h2>
-            <!-- dans la classe class="accordion-collapse collapse show", supprimer la classe show pour que les collapse ne s'affichent pas au lancement de la page -->
-            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordion_6">
-                <div class="accordion-body interet">
-                    <p>informatique, nouvelles technologies</p>
-                    <p>aviation, mécanique</p>
-                    <p>histoire, cinéma, musique</p>
-                </div>
-            </div>
-        </div>
-
+        <!-- lien vers le fichier javascript -->
+        <script src="script.js"></script>
+        
         <!-- cdn javascript bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
-</html>
+    </html>
+    
