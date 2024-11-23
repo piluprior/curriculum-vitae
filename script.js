@@ -1,7 +1,7 @@
 // test connexion fichier javacript
 console.log("Fichier JavaScript lié avec succès !");
 
-// déroulement collapse
+// déroulement collapses
 document.addEventListener("DOMContentLoaded", function () {
     let currentCollapse = null;  // Variable pour stocker le collapse actuellement ouvert
 
