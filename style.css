@@ -29,3 +29,8 @@ h6 .en_cours_tssr {
 	overflow: hidden; /* empêche le contenu de déborder */
 	border: 1px solid #cfe2ff !important; /* ajoute explicitement les bordures */
 }
+
+.accordion {
+	padding-left: 1rem !important;
+  	padding-right: 1rem !important;
+}
