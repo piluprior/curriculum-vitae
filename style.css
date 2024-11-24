@@ -23,3 +23,22 @@ h6 .en_cours_tssr {
 .no-cursor:hover {
 	cursor: default !important;
 }
+
+.accordion-item {
+	border-radius: 35px !important;
+	overflow: hidden; /* empêche le contenu de déborder */
+	border: 1px solid #cfe2ff !important; /* ajoute explicitement les bordures */
+}
+
+
+.btn-outline-warning {
+	border-radius: 35px !important;
+	overflow: hidden; /* empêche le contenu de déborder */
+	border: 1px solid #ffc107 !important; /* ajoute explicitement les bordures */
+}
+
+.btn-outline-primary {
+	border-radius: 35px !important;
+	overflow: hidden; /* empêche le contenu de déborder */
+	border: 1px solid #0d6efd !important; /* ajoute explicitement les bordures */
+}
