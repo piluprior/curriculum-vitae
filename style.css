@@ -38,3 +38,33 @@ h6 .en_cours_tssr {
 .text-link {
 	color: #0D6EFD !important;
 }
+
+/* scroll-up */
+.scroll-up {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background-color: #212529;
+	color: white;
+	border: none;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	cursor: pointer;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	opacity: 0; /* caché par défaut */
+	transition: opacity 0.5s ease, transform 0.3s ease;
+}
+  
+.scroll-up.show {
+	opacity: 1; /* apparaît quand l'utilisateur scrolle */
+}
+  
+.scroll-up:hover {
+	transform: scale(1.2); /* effet au survol */
+	background-color: #212529;
+}
