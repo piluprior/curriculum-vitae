@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // cibler tous les liens du menu
     document.querySelectorAll('.navbar-nav .dropdown-item').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
-            e.preventDefault(); // Empêcher le comportement par défaut du lien
+            e.preventDefault(); // empêcher le comportement par défaut du lien
 
             // extraire l'ID de l'ancre
-            const targetId = this.getAttribute("href").substring(1); // Supprimer le '#'
+            const targetId = this.getAttribute("href").substring(1); // supprimer le '#'
             
             // rechercher l'élément correspondant à l'ID
             const targetElement = document.getElementById(targetId);
