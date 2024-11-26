@@ -27,7 +27,7 @@ h6 .en_cours_tssr {
 .accordion-item {
 	border-radius: 35px !important;
 	overflow: hidden; /* empêche le contenu de déborder */
-	border: 1px solid #cfe2ff !important; /* ajoute explicitement les bordures */
+	border: 1px solid #CFE2FF !important; /* ajoute explicitement les bordures CFE2FF*/
 }
 
 .accordion {
@@ -57,7 +57,7 @@ h6 .en_cours_tssr {
 	cursor: pointer;
 	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 	opacity: 0; /* caché par défaut */
-	transition: opacity 0.5s ease, transform 0.3s ease;
+	transition: opacity 1s ease, transform 0.5s ease;
 	z-index: 1000;
 }
   
@@ -71,5 +71,9 @@ h6 .en_cours_tssr {
 }
 
 .accordion-button.collapsed {
-	background-color: #EEEFFF;
+	background-color: #F5F5FF; /* F5F5FF */
+}
+
+.btn-dark {
+	border-radius: 0 !important;
 }

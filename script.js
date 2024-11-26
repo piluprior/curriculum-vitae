@@ -48,9 +48,9 @@ console.log("Fichier JavaScript lié avec succès !");
 document.addEventListener('DOMContentLoaded', () => {
     const scrollUpButton = document.getElementById('scrollUp');
   
-    // affiche le bouton si l'utilisateur a scrollé de 100px ou plus
+    // affiche le bouton si l'utilisateur a scrollé de 150px ou plus
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 150) {
             scrollUpButton.classList.add('show');
         } else {
         scrollUpButton.classList.remove('show');
