@@ -50,18 +50,18 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // affiche le bouton si l'utilisateur a scrollé de 100px ou plus
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
-        scrollUpButton.classList.add('show');
-      } else {
+        if (window.scrollY > 100) {
+            scrollUpButton.classList.add('show');
+        } else {
         scrollUpButton.classList.remove('show');
-      }
+        }
     });
   
     // action lors du clic sur le bouton
     scrollUpButton.addEventListener('click', () => {
-      window.scrollTo({
-        top: 0,
+        window.scrollTo({
+            top: 0,
         behavior: 'smooth' // scroll fluide
-      });
+        });
     });
-  });
+});
