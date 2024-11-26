@@ -1,3 +1,12 @@
+html, body {
+	overflow-y: scroll; /* conserver le défilement */
+	scrollbar-width: none; /* masquer la barre sur Firefox */
+}
+  
+body::-webkit-scrollbar {
+	display: none; /* masquer la barre sur Chrome, Edge et Safari */
+}
+
 .display-6 {
 	padding-bottom: 1rem;
 }
