@@ -83,3 +83,9 @@ h6 .en_cours_tssr {
     top: 0; /* colle l'élément en haut de l'écran */
     z-index: 1020; /* s'assure qu'il reste au-dessus */
 }
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    border: 1px solid #383B3F !important; /* Personnalise l'épaisseur et la couleur */
+    box-shadow: none !important; /* Supprime les ombres */
+}
