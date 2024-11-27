@@ -1,12 +1,3 @@
-html, body {
-	overflow-y: scroll; /* conserver le défilement */
-	scrollbar-width: none; /* masquer la barre sur Firefox */
-}
-  
-body::-webkit-scrollbar {
-	display: none; /* masquer la barre sur Chrome, Edge et Safari */
-}
-
 .display-6 {
 	padding-bottom: 1rem;
 }
@@ -85,4 +76,10 @@ h6 .en_cours_tssr {
 
 .btn-dark {
 	border-radius: 0 !important;
+}
+
+.sticky-top {
+    position: sticky; /* garde le comportement sticky */
+    top: 0; /* colle l'élément en haut de l'écran */
+    z-index: 1020; /* s'assure qu'il reste au-dessus */
 }
