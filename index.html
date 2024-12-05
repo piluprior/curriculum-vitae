@@ -3,8 +3,20 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- version 1.0 - site créé from scratch le vendredi 22 novembre 2024 -->
+        <meta name="version" content="1.0" />
         <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="author" content="Marc Lupi" />
+        <!-- google tag (gtag.js) -->
+        <script
+            async src="https://www.googletagmanager.com/gtag/js?id=G-QSL0G0WFLB">
+        </script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-QSL0G0WFLB');
+        </script>
         <title>Marc Lupi :  technicien systèmes et réseaux</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons -->
@@ -20,25 +32,25 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Marc Lupi</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+                <!-- <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="see you, folks !" /></span> -->
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Expérience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Formation</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Compétences</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#soft">Qualités</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Intérêts</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#apropos">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#competences">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experiences">Expériences</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#formations">Formations</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#qualites">Qualités</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#langues">Langues</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interets">Intérêts</a></li>
                 </ul>
             </div>
         </nav>
         <!-- contenus -->
         <div class="container-fluid p-0">
             <!-- à propos -->
-            <section class="resume-section" id="about">
+            <section class="resume-section" id="apropos">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
                         Marc
@@ -54,16 +66,66 @@
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/marc-lupi" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/piluprior/" target="_blank"><i class="fab fa-github"></i></a>
-                        <!-- <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a> -->
-                        <!-- <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a> -->
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- expérience -->
-            <section class="resume-section" id="experience">
+
+            <!-- compétences -->
+            <section class="resume-section" id="competences">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Expérience</h2>
+                    <h2 class="mb-5">Compétences</h2>
+                    <div class="subheading mb-3">Acquises</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Assurer le support utilisateur en centre de services
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Exploiter des serveurs Windows et un domaine Active Directory
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Exploiter des serveurs Linux
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Exploiter un réseau IP
+                        </li>
+                    </ul>
+                    <br class="mb-0" />
+                    <div class="subheading mb-3">En cours d'acquisition</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Maintenir des serveurs dans une infrastructure virtualisée
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Automatiser des tâches à l'aide de scripts
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Maintenir et sécuriser les accès à Internet et les interconnexions des réseaux
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Mettre en place, assurer, tester les sauvegardes et les restaurations des éléments de l'infrastucture
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Exploiter et maintenir les services de déploiement des postes de travail
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+
+            <!-- expérience -->
+            <section class="resume-section" id="experiences">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Expériences</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Senior Web Developer</h3>
@@ -100,9 +162,9 @@
             </section>
             <hr class="m-0" />
             <!-- formation -->
-            <section class="resume-section" id="education">
+            <section class="resume-section" id="formations">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Formation</h2>
+                    <h2 class="mb-5">Formations</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">University of Colorado Boulder</h3>
@@ -123,144 +185,69 @@
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- compétences -->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Compétences</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
+            
             <!-- qualités -->
-            <section class="resume-section" id="soft">
+            <section class="resume-section" id="qualites">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Qualités</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
+                    <div class="subheading mb-3">La patience adoucit l'âme et éclaire le chemin</div>
                     <ul class="fa-ul mb-0">
                         <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
+                            <span class="fa-li"></span>
+                            La rigueur est la base de mon travail comme dans la vie de tous les jours, tandis que mon autonomie me permet de mener à bien mes missions en toute confiance.
                         </li>
                         <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
+                            <span class="fa-li"></span>
+                            Créatif et curieux, je cherche toujours des solutions innovantes et de nouvelles perspectives.
                         </li>
                         <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
+                            <span class="fa-li"></span>
+                            Mon sens de l’organisation me guide dans chaque projet et mon esprit d’équipe renforce la cohésion autour d’un objectif commun.
                         </li>
                     </ul>
                 </div>
             </section>
             <hr class="m-0" />
+
+            <!-- certifications -->
+            <section class="resume-section" id="langues">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Langues</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fab fa-font-awesome-flag"></i></span>
+                            Français - Langue maternelle, maîtrisé à l'écrit comme à l'oral
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fab fa-font-awesome-flag"></i></span>
+                            Anglais - Niveau intermédiaire (B2)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fab fa-font-awesome-flag"></i></span>
+                            Anglais technique - Niveau intermédiaire supérieur (C1)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fab fa-font-awesome-flag"></i></span>
+                            Japonais - Débutant (A1)
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+
             <!-- intérêts -->
-            <section class="resume-section" id="interests">
+            <section class="resume-section" id="interets">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Intérêts</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+                    <p>L'informatique n'est pas seulement mon métier, c'est une passion qui m'ouvre les portes des nouvelles technologies, toujours fascinantes et pleines de défis, qui émerveillent autant qu'elles questionnent.</p>
+                    <p class="mb-0">En parallèle, l'aviation nourrit un rêve d'enfant et la mécanique, dans laquelle j'ai grandi reste une activité qui m'anime. Cinéphile curieux, j'explore les salles obscures à la recherche d'émotions fortes, tandis que l'Histoire me permet de mieux comprendre le monde qui m'entoure.
+                                    Enfin, en tant que musicien amateur, je trouve dans la musique une source d'inspiration et une façon d'enrichir mon quotidien.</p>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- certifications -->
-            <section class="resume-section" id="certifications">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li>
-                    </ul>
-                </div>
-            </section>
         </div>
+        <!-- bouton scroll-up -->
+        <button id="scrollUp" class="scroll-up">↑</button>
         <!-- bootstrap core js -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- core theme js -->

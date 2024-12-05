@@ -1,15 +1,7 @@
-/*!
-* Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
+// script
 window.addEventListener('DOMContentLoaded', event => {
 
-    // Activate Bootstrap scrollspy on the main nav element
+    // activate Bootstrap scrollspy on the main nav element
     const sideNav = document.body.querySelector('#sideNav');
     if (sideNav) {
         new bootstrap.ScrollSpy(document.body, {
@@ -18,7 +10,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
-    // Collapse responsive navbar when toggler is visible
+    // collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
@@ -31,4 +23,26 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+});
+
+// scroll-up
+document.addEventListener('DOMContentLoaded', () => {
+    const scrollUpButton = document.getElementById('scrollUp');
+  
+    // affiche le bouton si l'utilisateur a scrollé de 150px ou plus
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 150) {
+            scrollUpButton.classList.add('show');
+        } else {
+        scrollUpButton.classList.remove('show');
+        }
+    });
+  
+    // action lors du clic sur le bouton
+    scrollUpButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+        behavior: 'smooth' // scroll fluide
+        });
+    });
 });
