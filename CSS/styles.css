@@ -10996,17 +10996,18 @@ section.resume-section .resume-section-content {
   
 .scroll-up:hover {
 	transform: scale(1.2);
-    background-color: #bd5d38;
+  background-color: #bd5d38;
 }
 
 .btn-dark {
 	background-color: #495057 !important;
-    border-color: #495057 !important;
+  border-color: #495057 !important;
+  border-radius: 20px !important;
 }
 
 .btn-dark:hover {
 	background-color: #bd5d38 !important;
-    border-color: #bd5d38 !important;
+  border-color: #bd5d38 !important;
 }
 
 .navbar-toggler:focus,
@@ -11021,4 +11022,8 @@ section.resume-section .resume-section-content {
 
 .accueil {
   text-decoration: underline;
+}
+
+.lead.catchphrase {
+  font-size: 1.4rem;
 }
