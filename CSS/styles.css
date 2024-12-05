@@ -11014,3 +11014,11 @@ section.resume-section .resume-section-content {
     border: 1px solid #c46e4c !important; /* personnalisation épaisseur et couleur */
     box-shadow: none !important; /* supprime les ombres */
 }
+
+.stage {
+  text-decoration: underline;
+}
+
+.accueil {
+  text-decoration: underline;
+}
