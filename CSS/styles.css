@@ -11025,5 +11025,12 @@ section.resume-section .resume-section-content {
 }
 
 .lead.catchphrase {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+}
+
+li {
+  list-style: none;
+}
+.fa-flag {
+  margin-right: 1rem;
 }
