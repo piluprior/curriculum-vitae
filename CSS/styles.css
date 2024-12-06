@@ -11037,7 +11037,7 @@ li {
 }
 
 .tooltip-inner{
-    background-color: #bd5d38;
+    background-color: #bd5d38 !important;
 }
 
 .tooltip .tooltip-arrow::before {
