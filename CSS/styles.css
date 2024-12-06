@@ -11017,20 +11017,30 @@ section.resume-section .resume-section-content {
 }
 
 .stage {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .accueil {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .lead.catchphrase {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
+
 .fa-flag {
-  margin-right: 1rem;
+    margin-right: 1rem;
+}
+
+.tooltip-inner{
+    background-color: #bd5d38;
+}
+
+.tooltip .tooltip-arrow::before {
+    border-top-color: #bd5d38 !important;
+    border-bottom-color: #bd5d38 !important;
 }
