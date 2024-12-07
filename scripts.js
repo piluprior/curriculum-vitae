@@ -67,8 +67,8 @@ document.addEventListener('DOMContentLoaded', function () {
 // });
 
 
-const isGitHubPages = window.location.hostname === "piluprior.github.io";
-if (isGitHubPages) {
-    document.querySelector('base').setAttribute('href', '/curriculum-vitae/');
-}
+// const isGitHubPages = window.location.hostname === "piluprior.github.io";
+// if (isGitHubPages) {
+//     document.querySelector('base').setAttribute('href', '/curriculum-vitae/');
+// }
 
