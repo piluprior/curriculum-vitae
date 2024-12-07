@@ -58,10 +58,17 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // script pour désactiver le comportement par défaut du lien
-document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.toggle-link').forEach(function (link) {
-        link.addEventListener('click', function (event) {
-            event.preventDefault(); // empêche le comportement par défaut du lien
-        });
-    });
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//     document.querySelectorAll('.toggle-link').forEach(function (link) {
+//         link.addEventListener('click', function (event) {
+//             event.preventDefault(); // empêche le comportement par défaut du lien
+//         });
+//     });
+// });
+
+
+const isGitHubPages = window.location.hostname === "piluprior.github.io";
+if (isGitHubPages) {
+    document.querySelector('base').setAttribute('href', '/curriculum-vitae/');
+}
+
