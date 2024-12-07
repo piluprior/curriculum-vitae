@@ -11009,6 +11009,16 @@ li {
     border-bottom-color: #bd5d38 !important;
 }
 
+.tooltip:hover .tooltip-text {
+  visibility: visible; /* desktop */
+}
+
+@media (hover: none) {
+  .tooltip:hover .tooltip-text {
+      visibility: hidden; /* désactivé pour mobile */
+  }
+}
+
 h6, .en-cours-tssr {
     background-color: #bd5d38 !important;
     color: #fff;
