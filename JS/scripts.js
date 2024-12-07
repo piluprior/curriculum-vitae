@@ -6,7 +6,9 @@ window.addEventListener('DOMContentLoaded', event => {
     if (sideNav) {
         new bootstrap.ScrollSpy(document.body, {
             target: '#sideNav',
-            rootMargin: '0px 0px -40%',
+            // fonctionnement anormal de rootMargin
+            // rootMargin: '0px 0px -40%',
+            rootMargin: '0px',
         });
     };
 
@@ -54,3 +56,12 @@ document.addEventListener('DOMContentLoaded', function () {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
 });
+
+// script pour désactiver le comportement par défaut du lien
+// document.addEventListener('DOMContentLoaded', function () {
+//     document.querySelectorAll('.toggle-link').forEach(function (link) {
+//         link.addEventListener('click', function (event) {
+//             event.preventDefault(); // empêche le comportement par défaut du lien
+//         });
+//     });
+// });
