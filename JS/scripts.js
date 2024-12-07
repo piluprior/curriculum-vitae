@@ -58,10 +58,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // script pour désactiver le comportement par défaut du lien
-// document.addEventListener('DOMContentLoaded', function () {
-//     document.querySelectorAll('.toggle-link').forEach(function (link) {
-//         link.addEventListener('click', function (event) {
-//             event.preventDefault(); // empêche le comportement par défaut du lien
-//         });
-//     });
-// });
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.toggle-link').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // empêche le comportement par défaut du lien
+        });
+    });
+});
