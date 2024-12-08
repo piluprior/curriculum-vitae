@@ -56,3 +56,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
 });
+
+// désactive les tooltips sur mobile
+if (matchMedia("(hover: none)").matches) {
+    document.querySelectorAll("[title]").forEach(el => el.removeAttribute("title"));
+}
