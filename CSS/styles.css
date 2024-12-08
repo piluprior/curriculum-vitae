@@ -10989,7 +10989,8 @@ section.resume-section .resume-section-content {
 }
 
 .lead.catchphrase {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    line-height: 2.3;
 }
 
 li {
@@ -11014,11 +11015,11 @@ li {
 }
 
 /* désactivé pour mobile */
-/* @media (hover: none) {
+@media (hover: none) {
   .tooltip:hover .tooltip-text {
       visibility: hidden;
   }
-} */
+}
 
 /* tooltip désactivé pour mobile */
 [title] {
