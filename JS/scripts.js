@@ -62,8 +62,13 @@ document.addEventListener('DOMContentLoaded', function () {
 //     document.querySelectorAll("[title]").forEach(el => el.removeAttribute("title"));
 // }
 
-
 if (matchMedia("(hover: none)").matches) {
     document.querySelectorAll("[title]").forEach(el => el.removeAttribute("title"));
     document.body.classList.add("no-tooltips");
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (matchMedia("(hover: none)").matches) {
+        document.querySelectorAll("[title]").forEach(el => el.removeAttribute("title"));
+    }
+});

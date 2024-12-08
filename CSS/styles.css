@@ -11027,6 +11027,7 @@ li {
 }
 
 .no-tooltips [title] {
+  display: none;
   pointer-events: none;
 }
 
