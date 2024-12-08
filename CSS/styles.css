@@ -11013,10 +11013,15 @@ li {
   visibility: visible; /* desktop */
 }
 
-@media (hover: none) {
+/* désactivé pour mobile */
+/* @media (hover: none) {
   .tooltip:hover .tooltip-text {
-      visibility: hidden; /* désactivé pour mobile */
+      visibility: hidden;
   }
+} */
+
+[title] {
+    pointer-events: none;
 }
 
 h6, .en-cours-tssr {
