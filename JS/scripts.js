@@ -58,6 +58,12 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // désactive les tooltips sur mobile
+// if (matchMedia("(hover: none)").matches) {
+//     document.querySelectorAll("[title]").forEach(el => el.removeAttribute("title"));
+// }
+
+
 if (matchMedia("(hover: none)").matches) {
     document.querySelectorAll("[title]").forEach(el => el.removeAttribute("title"));
+    document.body.classList.add("no-tooltips");
 }

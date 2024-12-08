@@ -11026,6 +11026,10 @@ li {
     pointer-events: none;
 }
 
+.no-tooltips [title] {
+  pointer-events: none;
+}
+
 h6, .en-cours-tssr {
     background-color: #bd5d38 !important;
     color: #fff;
