@@ -1,7 +1,8 @@
-// script
+// scripts
+
 window.addEventListener('DOMContentLoaded', event => {
 
-    // activate Bootstrap scrollspy on the main nav element
+    // on active le Bootstrap scrollspy dans l'élement nav principal
     const sideNav = document.body.querySelector('#sideNav');
     if (sideNav) {
         new bootstrap.ScrollSpy(document.body, {
@@ -12,7 +13,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
-    // collapse responsive navbar when toggler is visible
+    // collapse responsive navbar quand le toggler est visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
@@ -57,14 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// désactive les tooltips sur mobile
-// if (matchMedia("(hover: none)").matches) {
-//     document.querySelectorAll("[title]").forEach(el => el.removeAttribute("title"));
-// }
-
 // gestion des tooltips sur mobile
-
-
 document.addEventListener("DOMContentLoaded", () => {
     if (matchMedia("(hover: none)").matches) {
         document.querySelectorAll("[title]").forEach(el => el.removeAttribute("title"));
@@ -72,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-if (matchMedia("(hover: none)").matches) {
-    document.querySelectorAll("[title]").forEach(el => el.removeAttribute("title"));
-}
+// désactive les tooltips sur mobile
+// if (matchMedia("(hover: none)").matches) {
+//     document.querySelectorAll("[title]").forEach(el => el.removeAttribute("title"));
+// }
