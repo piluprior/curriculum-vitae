@@ -62,13 +62,16 @@ document.addEventListener('DOMContentLoaded', function () {
 //     document.querySelectorAll("[title]").forEach(el => el.removeAttribute("title"));
 // }
 
-if (matchMedia("(hover: none)").matches) {
-    document.querySelectorAll("[title]").forEach(el => el.removeAttribute("title"));
-    document.body.classList.add("no-tooltips");
-}
+// gestion des tooltips sur mobile
+
 
 document.addEventListener("DOMContentLoaded", () => {
     if (matchMedia("(hover: none)").matches) {
         document.querySelectorAll("[title]").forEach(el => el.removeAttribute("title"));
+        document.body.classList.add("no-tooltips");
     }
 });
+
+if (matchMedia("(hover: none)").matches) {
+    document.querySelectorAll("[title]").forEach(el => el.removeAttribute("title"));
+}
